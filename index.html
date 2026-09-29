@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urmika Mitra | E-Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0f766e;
+            --secondary: #134e4a;
+            --accent: #2dd4bf;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --heading: #0f172a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            padding: 7rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--heading);
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #14b8a6;
+            color: white;
+        }
+
+        /* Container & Sections */
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2.section-title {
+            font-size: 1.8rem;
+            color: var(--heading);
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 0.2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.8rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--heading);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Urmika's Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#fieldwork">Fieldwork</a></li>
+                    <li><a href="#projects">Projects & WebApps</a></li>
+                    <li><a href="#experience">Experience & Certs</a></li>
+                    <li><a href="#contact">Get in Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero" style="margin-bottom: 0;">
+        <h1>WELCOME</h1>
+        <p>Hey there! I am Urmika Mitra. M.Sc. Geoinformatics student specializing in spatial data analysis, remote sensing, and environmental monitoring[cite: 1].</p>
+        <a href="#projects" class="btn">Explore My Work</a>
+    </section>
+
+    <div class="container">
+
+        <!-- About Me -->
+        <section id="about">
+            <h2 class="section-title">About me</h2>
+            <p style="margin-bottom: 1.5rem;">My academic journey into spatial science began with a B.Sc. (Hons) in Geography. I am currently advancing my expertise through an M.Sc. in Geoinformatics at BVIEER, Pune[cite: 1].</p>
+            <div class="grid">
+                <div class="card">
+                    <h3><i class="fa-solid fa-earth-americas"></i> Geospatial Software & GIS</h3>
+                    <p>Mastering industry-standard tools like ArcGIS Pro, QGIS, and Google Earth Engine (GEE)[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fa-solid fa-code"></i> Programming & Automation</h3>
+                    <p>Leveraging Python (ArcPy, Pandas) and SQL to automate spatial workflows[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fa-solid fa-layer-group"></i> Core Focus</h3>
+                    <p>Remote sensing, InSAR ground deformation, LULC classification, and disaster inundation mapping[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Areas of Expertise -->
+        <section id="expertise">
+            <h2 class="section-title">Areas of Expertise</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Geospatial & Remote Sensing</h3>
+                    <p>Processing satellite data to decode earth surface dynamics[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Web-Mapping & Cartography</h3>
+                    <p>Designing clean map layouts and exploring web-mapping with HTML, CSS, JavaScript, and Leaflet[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Analytical & Environmental Research</h3>
+                    <p>Combining geography foundation with geoinformatics to analyze environmental indicators[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Field Explorations -->
+        <section id="fieldwork">
+            <h2 class="section-title">Field Explorations</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Pashan Lake Visit</h3>
+                    <p>Conducted hands-on learning on ground-level data collection, GPS surveying, and land-use classification[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Mayureshwar Field Visit</h3>
+                    <p>Rigorous ecological sampling including systematic sampling techniques like transects and belt transects[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Mulshi Field Visit</h3>
+                    <p>Observed natural stages of ecological development, primary succession, and sacred groves[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Geospatial Research & Applied Projects -->
+        <section id="projects">
+            <h2 class="section-title">Geospatial Research & Applied Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Brahmaputra River Basin Analysis</h3>
+                    <p>Multi-decadal spatiotemporal analysis of the Brahmaputra River basin using long-term Landsat satellite imagery[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Darjeeling 3D Terrain Visualization</h3>
+                    <p>Advanced 3D terrain and geospatial visualization of the Darjeeling Himalayan region using Python and GEE[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Assam Flood Inundation & Analysis</h3>
+                    <p>Multi-temporal SAR-based flood mapping and extent analysis in Assam using Google Earth Engine[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Pan-India Vegetation Dynamics</h3>
+                    <p>Multi-decadal spatiotemporal analysis of MODIS vegetation cover across India (2001-2023)[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience & Certifications -->
+        <section id="experience">
+            <h2 class="section-title">Professional Experience & Certificates</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Survey of India Internship</h3>
+                    <p>Worked as a GIS Intern at the Maharashtra & Goa Geospatial Directorate, executing 1:2K topographical mapping and feature extraction[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>NASA ARSET Training</h3>
+                    <p>Completed specialized training sessions offered by NASA's Applied Remote Sensing Training program on environmental monitoring[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Esri & HTML Certificates</h3>
+                    <p>Earned professional development certifications covering GIS for climate action and web programming[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="card">
+                <p><strong>Location:</strong> Pune, Maharashtra, India[cite: 1]</p>
+                <p><strong>Affiliation:</strong> Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER)[cite: 1]</p>
+                <p><strong>Email:</strong> urmikamitra28@gmail.com[cite: 1]</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/urmika-mitra-582469373/" target="_blank">View Profile</a>[cite: 1]</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/urmikamitra28" target="_blank">View Repository</a>[cite: 1]</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Urmika Mitra. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
